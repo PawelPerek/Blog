@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Ludica console', monospace;
+    background: #222222;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 20px;
+    border:0;
+    width: 150px;
+    height: 60px;
+    background-color: #555555;
+    color: white;
+    text-decoration: none;
+}
+
+label {
+    margin: 20px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

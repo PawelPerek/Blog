@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Ludica console', monospace;
+    background: #222222;
+    color:white;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121722;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+#pos {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.post{
+    margin: 60px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(0, 119, 255);
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.topic {
+    margin: 10px;
+}
+
+#add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+    border-radius: 20px;
+    width: 150px;
+    height: 60px;
+    background-color: #555555;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;    
+    bottom: 0;
+    right: 0;
+}

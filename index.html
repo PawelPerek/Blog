@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Witam na moim blogu!!</h1>
+        <label id="pos">Szukaj:<input type="text" id="regex" v-on:input="search"></label>
+    </header>
+    <main id="app">
+		<h3>Liczba Postów: <var></var></h3>
+	
+        <div class="post" v-for="post in posts">
+            <h5>{{post.author}} @ {{post.date}}</h5>
+            <h1 class="topic">{{post.topic}}</h1>
+            <h3>{{post.content}}</h3>
+            <hr>
+        </div>
+        <a href="add.html" id="add">Wstaw nowy post</a>
+    </main>
+
+    <footer>
+        Paweł Perek @ 2018
+    </footer>
+    <script src="js/main.js"></script>
+	<script src="js/get_number.js"></script>
+</body>
+</html>
+
+
